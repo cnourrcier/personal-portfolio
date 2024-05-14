@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HeroSection = () => {
+const Hero = () => {
     return (
         <section id="home" className="hero">
             <div className="container">
@@ -47,8 +47,8 @@ const HeroSection = () => {
                                 </a>
                             </span>
                         </div>
-                        <div className="hero-img">
-                        </div>
+                        <a href="#about"><div className="hero-img">
+                        </div></a>
                     </div>
                     <div className="skills">
                         <p>Tech Stack</p>
@@ -90,4 +90,4 @@ const HeroSection = () => {
     )
 }
 
-export default HeroSection;
+export default Hero;

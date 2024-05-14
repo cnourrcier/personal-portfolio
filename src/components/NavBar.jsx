@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NavBar = ({openMobileMenu}) => {
+const NavBar = ({ openMobileMenu }) => {
 
     return (
         <nav className="nav">
