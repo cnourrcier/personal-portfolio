@@ -14,7 +14,7 @@ const projects = [
         id: 2,
         name: 'Expense Tracker',
         tools: ['NodeJS', 'Express', 'MongoDB', 'React'],
-        img: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1715703483/Portfolio%20Projects/image-gallery_r0feop.png`,
+        img: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1715703481/Portfolio%20Projects/expense-tracker_su00lc.png`,
         demo: 'https://expense-tracker-mern-41ga.onrender.com/',
         github: 'https://github.com/cnourrcier/expense-tracker-mern'
     }
