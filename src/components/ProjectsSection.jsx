@@ -12,7 +12,7 @@ const ProjectsSection = () => {
                 <div className="projects-grid">
                     <div className="pro pro__1">
                         <div className="pro__img">
-                            <img src="src/assets/image_gallery.png" alt="Software Screenshot" loading="lazy" />
+                            <img src="src/assets/image-gallery.png" alt="Software Screenshot" loading="lazy" />
                         </div>
                         <div className="pro__text">
                             <h3>Image Search Gallery</h3>

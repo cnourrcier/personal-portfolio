@@ -231,11 +231,19 @@ nav ul a:hover {
     position: relative;
 }
 
+
+@media (min-width: 900px) and (max-width:1030px) {
+    .hero-main {
+        gap: 5rem;
+    }
+}
+
 @media (min-width: 900px) and (max-width:950px) {
     .hero-main {
         padding-bottom: 50px;
     }
 }
+
 
 @media (max-width: 900px) {
     .hero-main {
@@ -298,56 +306,11 @@ nav ul a:hover {
     color: #147efb
 }
 
-.hero-text img {
-    height: 6rem;
-    position: absolute;
-    right: 13rem;
-    top: 8.7rem;
-    width: 6rem
-}
-
-@media (max-width:900px) {
-    .hero-text img {
-        right: 3rem
-    }
-}
-
-@media (max-width:500px) {
-    .hero-text img {
-        height: 4.5rem;
-        right: 4rem;
-        top: 6.4rem;
-        width: 4.5rem
-    }
-}
-
-@media (max-width:400px) {
-    .hero-text img {
-        right: 3rem
-    }
-}
-
-@media (max-width:380px) {
-    .hero-text img {
-        right: 3rem
-    }
-}
-
-@media (max-width:375px) {
-    .hero-text img {
-        right: 1.7rem
-    }
-}
-
 .hero-img {
-    /* -webkit-animation: morph 8s ease-in-out infinite; */
-    /* animation: morph 8s ease-in-out infinite; */
     background-image: url(./src/assets/profilePic.png);
     background-position: 50%;
-    background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #2d2e32;
-    /* border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; */
     border-radius: 50%;
     height: 35rem;
     position: relative;
@@ -355,38 +318,17 @@ nav ul a:hover {
     width: 35rem;
 }
 
+@media (min-width: 900px) and (max-width: 960px) {
+    .hero-img {
+        height: 29rem;
+        width: 29rem;
+    }
+}
+
 @media (max-width:500px) {
     .hero-img {
         height: 28rem;
         width: 28rem;
-    }
-}
-
-@-webkit-keyframes morph {
-    0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-
-    50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-
-    to {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-}
-
-@keyframes morph {
-    0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-
-    50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-
-    to {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 }
 
@@ -546,34 +488,6 @@ nav ul a:hover {
     .img-side__main-img {
         height: auto;
         width: 90%;
-    }
-}
-
-.work-emoji {
-    bottom: 35px;
-    position: absolute;
-    right: 98px;
-    width: 6rem !important;
-    z-index: 10;
-}
-
-@media (max-width:1020px) {
-    .work-emoji {
-        bottom: 25px;
-        right: 245px;
-    }
-}
-
-@media (max-width:880px) {
-    .work-emoji {
-        bottom: 57px;
-        right: 156px;
-    }
-}
-
-@media (max-width:750px) {
-    .work-emoji {
-        display: none;
     }
 }
 
