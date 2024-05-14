@@ -6,7 +6,7 @@ const About = () => {
             <div className="container">
                 <div className="about-content">
                     <div className="img-side">
-                        <img src="/src/assets/computer.jpg" alt="mee" className="img-side__main-img" />
+                        <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1715709279/Portfolio%20Projects/computer_n0jopg.jpg`} alt="laptop" className="img-side__main-img" />
                     </div>
                     <div className="text-side">
                         <h3>About me</h3>
