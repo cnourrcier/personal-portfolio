@@ -70,9 +70,6 @@ const Hero = () => {
                                     <img src="https://skillicons.dev/icons?i=tailwind" alt="skill-icon" />
                                 </li>
                                 <li>
-                                    <img src="https://skillicons.dev/icons?i=scss" alt="skill-icon" />
-                                </li>
-                                <li>
                                     <img src="https://skillicons.dev/icons?i=nodejs" alt="skill-icon" />
                                 </li>
                                 <li>

@@ -9,7 +9,7 @@ const Project = ({ project }) => {
             <div className="pro__text">
                 <h3>{project.name}</h3>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem perferendis et doloremque harum ut voluptates laborum, repudiandae autem fugiat porro. Iusto magnam voluptatem adipisci delectus eligendi quam illo molestiae saepe.
+                    {project.description}
                 </p>
                 <div className="stack">
                     {project.tools.map((tool, index) => (

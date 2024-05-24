@@ -280,6 +280,7 @@ nav ul a:hover {
 @media (max-width:500px) {
     .hero-text h1 {
         font-size: 4rem;
+        margin-top: 0;
     }
 }
 
@@ -297,21 +298,56 @@ nav ul a:hover {
     }
 }
 
+@media (max-width:500px) {
+    .hero-text p {
+        margin-bottom: 2rem;
+    }
+}
+
 .hero-text span {
     cursor: pointer;
     display: flex;
-    gap: 1.3rem;
+    gap: 3rem;
     margin: 2.5rem 0;
 }
 
+@media (max-width: 900px) {
+    .hero-text span {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-text span {
+        gap: 4rem;
+        margin: 0 0 2.5rem 0;
+    }
+}
+
 .hero-text span a {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
     color: var(--color1);
     font-size: 3rem;
     transition: all .2s;
 }
 
+.hero-text span a svg {
+    width: 100%;
+    height: 100%;
+}
+
 .hero-text span a:hover {
     color: var(--color2);
+}
+
+@media (max-width: 500px) {
+    .hero-text span a {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 .hero-img {
@@ -532,6 +568,14 @@ nav ul a:hover {
     flex-direction: column;
 }
 
+@media (max-width: 1020px) {
+    .project-content {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 @media (max-width:600px) {
     .project-content {
         text-align: center;
@@ -740,6 +784,14 @@ nav ul a:hover {
     flex-direction: column;
 }
 
+@media (max-width: 1020px) {
+    .contact__content {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 @media (max-width: 750px) {
     .contact__title {
         text-align: center;
@@ -766,7 +818,7 @@ nav ul a:hover {
     margin-top: 6rem;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
     .contact__icons {
         flex-direction: column;
         gap: 0;
