@@ -15,7 +15,7 @@ const projects = [
         id: 2,
         name: 'Image Search Gallery',
         tools: ['React', 'Tailwind CSS', 'Pixabay API'],
-        img: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1715703483/Portfolio%20Projects/image-gallery_r0feop.png`,
+        img: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1719695190/Portfolio%20Projects/imagesearchgallery_ibw6wi.gif`,
         demo: 'https://image-gallery-react-tailwindcss.onrender.com',
         github: 'https://github.com/cnourrcier/image-gallery-react-tailwindcss',
         description: 'A React-based project for searching and displaying images, including a user-friendly search interface and detailed image cards with metadata and tag-based search functionality.'
