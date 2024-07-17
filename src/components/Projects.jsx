@@ -15,7 +15,7 @@ const projects = [
         id: 2,
         name: 'Stock Market Portfolio',
         tools: ['NodeJS', 'Express', 'MongoDB', 'React', 'MaterialUI'],
-        img: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1721171379/Portfolio%20Projects/stock-market-portfolio_dos4by.gif`,
+        img: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1721177232/Portfolio%20Projects/stock-market-portfolio-dark_dmby4o.gif`,
         demo: 'https://stock-market-portfolio-mern.onrender.com',
         github: 'https://github.com/cnourrcier/stock-market-portfolio-mern',
         description: 'A Full Stack MERN web application that displays stock prices, allows the user to filter/sort, and add/remove stocks from a watchlist'
