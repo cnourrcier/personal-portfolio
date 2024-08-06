@@ -1,37 +1,28 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
-import MobileNav from './components/MobileNav';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import NavBar from './components/navBar/NavBar';
+import MobileNav from './components/mobileNav/MobileNav';
+import Hero from './components/hero/Hero';
+import About from './components/about/About';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+import { MobileMenuProvider } from './context/MobileMenuContext';
 
 function App() {
-  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-
-  const handleClick = (delay) => {
-    setTimeout(() => {
-      setIsMobileNavOpen(!isMobileNavOpen);
-    }, delay);
-  }
 
   return (
     <>
-      <NavBar openMobileMenu={() => handleClick(100)} />
-      <div className={`mobile-nav ${isMobileNavOpen ? 'open-menu' : 'closed-menu'}`}>
-        <MobileNav closeMobileMenu={() => handleClick(500)} />
-      </div>
+      <MobileMenuProvider>
+        <NavBar />
+        <MobileNav />
+      </MobileMenuProvider>
       <Hero />
       <About />
       <Projects />
       <Contact />
-      <footer>
-        <div className="container">
-          <h3>Copyright © 2024. All rights are reserved</h3>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

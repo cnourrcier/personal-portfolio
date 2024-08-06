@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './styles.css';
 
 const Project = ({ project }) => {
     return (
-        <div className="pro pro__1">
-            <div className="pro__img">
-                <img src={project.img} alt="Software Screenshot" loading="lazy" />
+        <div className="project">
+            <div className="project-img-container">
+                <img src={project.img} alt="Project Screenshot" loading="lazy" />
             </div>
-            <div className="pro__text">
+            <div className="project-text">
                 <h3>{project.name}</h3>
                 <p>
                     {project.description}

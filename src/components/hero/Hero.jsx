@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 const Hero = () => {
     return (
@@ -7,8 +8,7 @@ const Hero = () => {
                 <div className="content">
                     <div className="hero-main">
                         <div className="hero-text">
-                            <h1>Full Stack Web Developer</h1>
-                            <p>Hi, I'm Charlie Nourrcier, a full-stack developer based in New York. 📍</p>
+                            <h1>Software Engineer</h1>
                             <span>
                                 <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/charlienourrcier/">
                                     <svg

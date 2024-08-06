@@ -1,0 +1,144 @@
+.project {
+    background-color: var(--color3);
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    height: 40rem;
+    gap: 8rem;
+}
+
+@media (max-width:1020px) {
+    .project {
+        flex-direction: column;
+        gap: 3rem;
+        height: auto;
+        margin: 0 auto;
+        width: -moz-fit-content;
+        width: -webkit-fit-content;
+        width: fit-content;
+    }
+}
+
+@media (max-width:400px) {
+    .project {
+        width: 100%
+    }
+}
+
+.project-img-container {
+    background-color: hsla(0, 0%, 46%, .2);
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    height: auto;
+    overflow: hidden;
+    width: 53rem;
+}
+
+@media (max-width:650px) {
+    .project-img-container {
+        width: 100%;
+    }
+}
+
+.project-img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    width: 30rem;
+}
+
+@media (max-width:1020px) {
+    .project-text {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:400px) {
+    .project-text {
+        width: 100%;
+    }
+}
+
+.project-text h3 {
+    align-items: center;
+    color: var(--color1);
+    display: flex;
+    font-size: 1.7rem;
+    gap: .2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.project-text p {
+    color: var(--color5);
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: none;
+}
+
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.stack p {
+    background-color: var(--color3);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .1); */
+    color: #000 !important;
+    font-family: Mulish, sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.links {
+    gap: 1rem;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.links,
+.links a {
+    align-items: center;
+    display: flex;
+}
+
+.links a {
+    color: var(--color1);
+    font-size: 1.7rem;
+    font-weight: 500;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.links a i {
+    font-size: 2.8rem;
+}
+
+.links a .link-icon {
+    font-size: 2rem !important;
+}
+
+.links a img {
+    width: 3.5rem;
+}
+
+.links a:hover {
+    color: var(--color2);
+    transition: all .3s;
+}

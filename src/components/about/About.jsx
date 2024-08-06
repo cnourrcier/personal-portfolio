@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 const About = () => {
     return (
@@ -10,13 +11,10 @@ const About = () => {
                     </div>
                     <div className="text-side">
                         <h3>About me</h3>
-                        <h4>Full-stack Developer
-                            <br /> based in New York, USA 📍
+                        <h4>Software Engineer
+                            <br /> based in New Jersey, USA 📍
                         </h4>
-                        <p>Hey, my name is Charlie, and I'm a Full-stack Developer. My passion is building seamless and dynamic web solutions to elevate your digital presence.
-                            <br />
-                            <br />
-                            My main stack currently is NodeJS, Express, MongoDB, and React.
+                        <p>Hey, my name is Charlie, and I'm a Full-stack software engineer. My passion is building seamless and dynamic web solutions to elevate your digital presence.
                         </p>
                     </div>
                 </div>

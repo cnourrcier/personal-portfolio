@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { MobileMenuContext } from '../../context/MobileMenuContext';
+import './styles.css';
 
-const NavBar = ({ openMobileMenu }) => {
+const NavBar = () => {
+    const { toggleMobileMenu } = useContext(MobileMenuContext);
 
     return (
         <nav className="nav">
-            <h3 className="logo">
-                charlie.dev
-            </h3>
+            <a href="https://github.com/cnourrcier" target="_blank"><h3 className="logo">
+                Charlie Nourrcier
+            </h3></a>
             <ul>
                 <li>
                     <a href="#home">Home</a>
@@ -20,9 +23,9 @@ const NavBar = ({ openMobileMenu }) => {
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
-                <li onClick={() => openMobileMenu()}>
+                <li className="hamburger-menu" onClick={() => toggleMobileMenu(100)}>
                     <svg
-                        className="mobile-menu"
+                        className="hamburger-menu"
                         xmlns="http://www.w3.org/2000/svg"
                         width="30" height="30"
                         viewBox="0 0 24 24"
@@ -40,7 +43,7 @@ const NavBar = ({ openMobileMenu }) => {
                     </svg>
                 </li>
             </ul>
-        </nav>
+        </nav >
     )
 }
 
