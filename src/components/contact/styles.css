@@ -1,6 +1,6 @@
 .contact {
     background-color: var(--color3);
-    padding: 11rem 0;
+    padding: 15rem 0;
 }
 
 @media (max-width:1020px) {
@@ -44,38 +44,44 @@
 .contact-icons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 6rem;
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1020px) {
     .contact-icons {
-        flex-direction: column;
-        gap: 0;
-        justify-content: center;
-        text-align: center;
+        justify-content: space-around;
     }
 }
 
-.contact-icons span {
-    align-items: center;
-    background-color: var(--color3);
-    border-radius: 50%;
-    color: var(--color1);
+.contact-icons a {
     display: flex;
-    height: 15rem;
+    align-items: center;
     justify-content: center;
-    width: 15rem;
-}
-
-.contact-icons span a {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color: #fff;
     font-size: 2rem;
     font-weight: bold;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.contact-icons span a:hover {
-    transform: translateY(5px);
-    color: var(--color2);
+.contact-icons a:hover {
+    background-color: var(--color2);
+    transform: translateY(-10px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 1020px) {
+    .contact-icons a {
+        height: 13rem;
+        width: 13rem;
+    }
+
+    .contact-icons i {
+        font-size: 1.5rem;
+    }
+}

@@ -1,21 +1,62 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles.css';
 
 const Hero = () => {
+    const titles = [
+        'Software Engineer      ',
+        'Full Stack Developer      ',
+        'System Designer      ',
+        'Collaborator      ',
+        'Leader      ',
+        'Problem Solver      ',
+        'Lifelong Learner      '
+    ];
+
+    const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+    const [currentCharIndex, setCurrentCharIndex] = useState(0);
+    const [isErasing, setIsErasing] = useState(false);
+
+
+    useEffect(() => {
+        const handleTyping = () => {
+            if (isErasing) {
+                if (currentCharIndex > 0) {
+                    setCurrentCharIndex(currentCharIndex - 1);
+                } else {
+                    setIsErasing(false);
+                    setCurrentTitleIndex((currentTitleIndex + 1) % titles.length);
+                }
+            } else {
+                if (currentCharIndex < titles[currentTitleIndex].length) {
+                    setCurrentCharIndex(currentCharIndex + 1);
+                } else {
+                    setIsErasing(true);
+                }
+            }
+        };
+
+        const typingSpeed = isErasing ? 50 : 150;
+        const timer = setTimeout(handleTyping, typingSpeed);
+
+        return () => clearTimeout(timer);
+    }, [currentCharIndex, isErasing, currentTitleIndex, titles]);
+
     return (
         <section id="home" className="hero">
             <div className="container">
                 <div className="content">
                     <div className="hero-main">
                         <div className="hero-text">
-                            <h1>Software Engineer</h1>
+                            <div className='titles-container'>
+                                <h1>{titles[currentTitleIndex].substring(0, currentCharIndex)}</h1>
+                            </div>
                             <span>
                                 <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/charlienourrcier/">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="32"
                                         height="32"
-                                        viewBox="0 0 24 24"
+                                        viewBox="3 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
                                         strokeWidth="2"
@@ -34,7 +75,7 @@ const Hero = () => {
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="32"
                                         height="32"
-                                        viewBox="0 0 24 24"
+                                        viewBox="3 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
                                         strokeWidth="2"
@@ -47,10 +88,10 @@ const Hero = () => {
                                 </a>
                             </span>
                         </div>
-                        <a href="#about"><div className="hero-img">
-                        </div></a>
+                        <div className="hero-img">
+                        </div>
                     </div>
-                    <div className="skills">
+                    <div className="tech-stack">
                         <p>Tech Stack</p>
                         <div className="logos">
                             <ul>
