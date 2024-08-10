@@ -5,11 +5,10 @@ const Hero = () => {
     const titles = [
         'Software Engineer      ',
         'Full Stack Developer      ',
-        'System Designer      ',
         'Collaborator      ',
         'Leader      ',
         'Problem Solver      ',
-        'Lifelong Learner      '
+        'Full Time Learner      '
     ];
 
     const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
@@ -119,6 +118,42 @@ const Hero = () => {
                                 <li>
                                     <img src="https://skillicons.dev/icons?i=mongodb" alt="skill-icon" />
                                 </li>
+                                {/* <li>
+                                    <img src="https://skillicons.dev/icons?i=git" alt="skill-icon" />
+                                </li>
+                                <li>
+                                    <img src="https://skillicons.dev/icons?i=aws" alt="skill-icon" />
+                                </li>
+                                <li>
+                                    <img src="https://skillicons.dev/icons?i=bootstrap" alt="skill-icon" />
+                                </li>
+                                <li>
+                                    <img src="https://skillicons.dev/icons?i=docker" alt="skill-icon" />
+                                </li>
+                                <li>
+                                    <img src="https://skillicons.dev/icons?i=figma" alt="skill-icon" />
+                                </li>
+                                <li>
+                                    <img src="https://skillicons.dev/icons?i=firebase" alt="skill-icon" />
+                                </li>
+                                <li>
+                                    <img src="https://skillicons.dev/icons?i=github" alt="skill-icon" />
+                                </li>
+                                <li>
+                                    <img src="https://skillicons.dev/icons?i=materialui" alt="skill-icon" />
+                                </li>
+                                <li>
+                                    <img src="https://skillicons.dev/icons?i=matlab" alt="skill-icon" />
+                                </li>
+                                <li>
+                                    <img src="https://skillicons.dev/icons?i=py" alt="skill-icon" />
+                                </li>
+                                <li>
+                                    <img src="https://skillicons.dev/icons?i=raspberrypi" alt="skill-icon" />
+                                </li>
+                                <li>
+                                    <img src="https://skillicons.dev/icons?i=vite" alt="skill-icon" />
+                                </li> */}
                             </ul>
                         </div>
                     </div>
