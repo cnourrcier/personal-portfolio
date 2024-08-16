@@ -3,10 +3,8 @@ import './styles.css';
 
 const Hero = () => {
     const titles = [
-        'Software Engineer      ',
         'Full Stack Developer      ',
         'Collaborator      ',
-        'Leader      ',
         'Problem Solver      ',
         'Full Time Learner      '
     ];
