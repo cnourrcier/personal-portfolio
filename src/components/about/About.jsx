@@ -14,11 +14,11 @@ const About = () => {
                         <h4>Software Engineer
                             <br /> based in New Jersey, USA 📍
                         </h4>
-                        <p>I have a strong love and endless curiosity for designing and building things. From a young age, I have been fascinated by how and why things work. This curiosity drives me to break down complex ideas into simple, understandable components and discover new and better ways to put them back together. A core part of who I am, both as a software engineer and as an individual, is the desire to continuously learn and grow. I am self-driven and quickly become invested in projects, diving deep into problems to find the best solution.
+                        <p>I have a strong love and endless curiosity for designing and building things. From a young age, I have been fascinated by how and why things work. I love tackling complex ideas and breaking them down into simple, understandable components. In my experience, undertanding something on a basic fundamental level allows me to discover new and better ways to put the pieces back together. A core part of who I am, both as a software engineer and as an individual, is the desire to continuously learn and grow. I am self-driven and quickly become invested in projects, diving deep into problems to find the best solution.
                         </p>
                         <br />
-                        <p>While I enjoy working independently, I also thrive in team environments. I am an excellent collaborator with strong listening and communication skills. I believe that effectively communicating requires a deep understanding beyond just knowing the answer. I can take on leadership roles intuitively and ambitiously, guiding projects from planning through to completion. I love what I do, and I believe that this passion makes the difference between being good at something and being great.
-                        </p>
+                        {/* <p>While I enjoy working independently, I also thrive in team environments. I am an excellent collaborator with strong listening and communication skills. I believe that effectively communicating requires a deep understanding beyond just knowing the answer. I can take on leadership roles intuitively and ambitiously, guiding projects from planning through to completion. I love what I do, and I believe that this passion makes the difference between being good at something and being great.
+                        </p> */}
                     </div>
                 </div>
             </div>
