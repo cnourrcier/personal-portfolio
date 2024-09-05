@@ -7,7 +7,7 @@ const projects = [
         id: 1,
         name: 'E-Commerce Platform',
         tools: ['NodeJS', 'Express', 'MongoDB', 'React', 'CSS'],
-        img: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1719608700/Portfolio%20Projects/e-commerce-demo_e18wss.gif`,
+        img: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1725579026/Portfolio%20Projects/e-commerce-cardinal-finds_fhuz5o.gif`,
         demo: 'https://cardinalfinds.com',
         github: 'https://github.com/cnourrcier/e-commerce-mern',
         description: 'A complete, robust, and user-friendly e-commerce application that includes authentication and authorization, data validations, product search, product browsing, product management, shopping cart functionality, checkout and order processing, and mock payment simulation.'
