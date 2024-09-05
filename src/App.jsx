@@ -1,6 +1,5 @@
 
 import React from 'react';
-import './App.css';
 import NavBar from './components/navBar/NavBar';
 import MobileNav from './components/mobileNav/MobileNav';
 import Hero from './components/hero/Hero';
