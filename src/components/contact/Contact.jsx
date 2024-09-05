@@ -3,8 +3,7 @@ import './styles.css';
 
 const Contact = () => {
     return (
-        <section id="contact" className="contact">
-            <div className="container">
+        <section id="contact" className="contact-container">
                 <div className="contact-content">
                     <div className="contact-title">
                         <h3>Contact</h3>
@@ -24,7 +23,6 @@ const Contact = () => {
                         <a href="mailto:charlienourrcier@gmail.com" id="profile-link" target="_blank" className="btn contact-details">
                             <i className="fab fa-at">Email</i>
                         </a>
-                    </div>
                 </div>
             </div>
         </section>

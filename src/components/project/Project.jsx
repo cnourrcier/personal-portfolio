@@ -3,11 +3,11 @@ import './styles.css';
 
 const Project = ({ project }) => {
     return (
-        <div className="project">
+        <div className="project-container">
             <div className="project-img-container">
                 <img src={project.img} alt="Project Screenshot" loading="lazy" />
             </div>
-            <div className="project-text">
+            <div className="project-text-container">
                 <h3>{project.name}</h3>
                 <p>
                     {project.description}

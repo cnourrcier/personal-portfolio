@@ -46,14 +46,14 @@ textarea {
     resize: none;
 }
 
-.container {
+.page-container {
     margin: 0 auto;
     width: 100%;
-    padding: 0 8rem;
+    margin: 0 8rem;
 }
 
 @media (max-width:460px) {
-    .container {
+    .page-container {
         padding: 0 1.7rem;
     }
 }

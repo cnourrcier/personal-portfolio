@@ -1,12 +1,6 @@
-.contact {
+.contact-container {
+    padding: 8rem;
     background-color: var(--color3);
-    padding: 15rem 0;
-}
-
-@media (max-width:1020px) {
-    .contact {
-        padding: 8rem 0;
-    }
 }
 
 .contact-content {
@@ -14,45 +8,24 @@
     flex-direction: column;
 }
 
-@media (max-width: 1110px) {
-    .contact-content {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
-@media (max-width: 750px) {
-    .contact-title {
-        text-align: center;
-    }
-}
-
 .contact-title h3 {
-    color: var(--color2);
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: var(--color2);
     text-transform: uppercase;
 }
 
 .contact-title h4 {
+    font-size: 2.5rem;
     color: var(--color1);
-    font-size: 2.5rem
 }
 
 .contact-icons {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 6rem;
-    margin-top: 5rem;
-}
-
-@media (max-width: 1110px) {
-    .contact-icons {
-        justify-content: space-around;
-    }
+    width: 100%;
+    margin-top: 8rem;
 }
 
 .contact-icons a {
@@ -62,10 +35,10 @@
     height: 17rem;
     width: 17rem;
     border-radius: 50%;
-    background-color: var(--color1);
-    color: #fff;
     font-size: 2rem;
     font-weight: bold;
+    background-color: var(--color1);
+    color: #fff;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -73,6 +46,25 @@
     background-color: var(--color2);
     transform: translateY(-10px);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1248px) {
+    .contact-content {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1020px) {
+    .contact-icons a {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .contact-icons i {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 1020px) {
@@ -83,5 +75,29 @@
 
     .contact-icons i {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-container {
+        padding: 8rem 5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .contact-icons {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .contact-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-container {
+        padding: 8rem 3rem;
     }
 }

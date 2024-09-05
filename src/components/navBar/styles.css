@@ -2,28 +2,16 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.7rem;
     height: auto;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    padding: 2.5rem 8rem 2.5rem 8rem;
+    padding: 2.5rem 8rem;
+    font-size: 1.7rem;
     background-color: var(--color3);
     box-shadow: 0 0 10px rgba(0, 0, 0, .09);
     z-index: 200;
-}
-
-@media (max-width: 900px) {
-    nav {
-        padding: 2.5rem 5rem 2.5rem 5rem;
-    }
-}
-
-@media (max-width: 400px) {
-    nav {
-        padding: 25px 30px;
-    }
 }
 
 nav ul {
@@ -31,10 +19,6 @@ nav ul {
     justify-content: space-between;
     gap: 2.5rem;
 }
-
-@media (max-width: 1100px) {}
-
-nav ul {}
 
 nav ul a {
     color: var(--color1);
@@ -44,12 +28,6 @@ nav ul a {
 
 nav ul a:hover {
     color: var(--color2);
-}
-
-@media (max-width: 900px) {
-    nav ul a {
-        display: none;
-    }
 }
 
 .logo {
@@ -74,7 +52,21 @@ nav ul a:hover {
 }
 
 @media (max-width: 900px) {
+    nav {
+        padding: 2.5rem 5rem;
+    }
+
+    nav ul a {
+        display: none;
+    }
+
     .hamburger-menu {
         display: flex;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        padding: 2.5rem 3rem;
     }
 }

@@ -43,16 +43,14 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section id="projects" className="projects">
-            <div className="container">
-                <div className="projects-content">
-                    <h3>Projects</h3>
-                    <h4>Here you will find some of my most recent projects.</h4>
-                    <div className="projects-grid">
-                        {projects.map((project) => (
-                            <Project key={project.id} project={project} />
-                        ))}
-                    </div>
+        <section id="projects" className="projects-container">
+            <div className="projects-content">
+                <h3>Projects</h3>
+                <h4>Here you will find some of my most recent projects.</h4>
+                <div className="projects-grid">
+                    {projects.map((project) => (
+                        <Project key={project.id} project={project} />
+                    ))}
                 </div>
             </div>
         </section>
